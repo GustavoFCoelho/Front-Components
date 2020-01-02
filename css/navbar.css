@@ -12,6 +12,10 @@
     flex-direction: column
 }
 
+.menuIcon:hover{
+    cursor: pointer;
+}
+
 .menuIcon p{
     font-size: 11px;
 }
@@ -20,7 +24,7 @@
     overflow: hidden;
     position: absolute;
     top: 0;
-    background: rgb(33, 56, 77);
+    background: var(--dark);
     height: 100vh;
     z-index: 1;
     width: 0px;
@@ -41,14 +45,18 @@
 .item:hover{
     border-radius: 5px;
     background: var(--secondary);
-
 }
 
 .hideSideMenu{
+    background: var(--dark) ;
     display: flex;
     align-items: center;
     padding: 1.5rem 2rem;
+}
 
+.hideSideMenu:hover{
+    cursor: pointer;
+    background: var(--lesserDark) ;
 }
 
 .hideSideMenu p{
