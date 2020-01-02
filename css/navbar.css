@@ -20,12 +20,13 @@
     overflow: hidden;
     position: absolute;
     top: 0;
-    background: rgb(55, 99, 134);
+    background: rgb(33, 56, 77);
     height: 100vh;
     z-index: 1;
     width: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition-duration: 0.5s;
 }
 
 .item-list{
