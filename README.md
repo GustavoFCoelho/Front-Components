@@ -25,6 +25,48 @@
  ```
 
 ---------------------------------------------------------------------------------------------------
+--                                         Full Page Menu SideBar                                --
+---------------------------------------------------------------------------------------------------
+ ```
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburguer">
+        <div></div>
+    </div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a>Paciente</a>
+                        <ul class="sub-menu bg-dark">
+                            <li class="sub-item">Cadastro</li>
+                            <li class="sub-item">Prontuario</li>
+                            <li class="sub-item">Responsável</li>
+                        </ul>
+                    </li>
+                    <li><a>Agenda</a>
+                        <ul class="sub-menu bg-dark">
+                            <li class="sub-item">Eventos</li>
+                            <li class="sub-item">Novo Evento</li>
+                        </ul>
+                    </li>
+                    <li><a>Medicamentos</a>
+                        <ul class="sub-menu bg-dark">
+                            <li class="sub-item">Novo Medicamento</li>
+                            <li class="sub-item">Agenda de Medicamentos</li>
+                            <li class="sub-item">Nova Medicação</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+ ```
+
+
+---------------------------------------------------------------------------------------------------
 --                                         Markup Example                                        --
 ---------------------------------------------------------------------------------------------------
 ```
