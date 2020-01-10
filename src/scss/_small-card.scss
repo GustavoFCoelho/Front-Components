@@ -1,0 +1,28 @@
+.small-card{
+    margin: 1.5rem;
+    border-radius: 10px;
+    border-top: 2px;
+    border-left: 2px;
+    border-style: solid;
+    border-color: #ddd;
+    border-bottom: 0;
+    border-right: 0;
+    box-shadow: 2px 2px 2px #ddd;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+
+    .card-title{
+        font-size: 1.5rem;
+    }
+}
+
+.flex-card{
+    display: flex;
+    flex-direction: row;
+    
+    .small-card{
+        flex: 1
+    }
+}

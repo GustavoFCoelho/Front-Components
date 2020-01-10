@@ -4,3 +4,43 @@
         color: $info-color;
     }
 }
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-1{ margin-top: 1rem; }
+.mt-2{ margin-top: 2rem; }
+.mt-3{ margin-top: 3rem; }
+.mt-4{ margin-top: 4rem; }
+.mt-5{ margin-top: 5rem; }
+
+%btn-shared{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn{
+    &-blue{
+        @extend %btn-shared;
+        color: #333;
+        background: $light-blue;
+
+        &:hover{
+            background: $dark-blue;
+        }
+    }
+}
+
+.lineup{
+    border: #333 solid 1px;
+    width: 100%;
+}
