@@ -41,17 +41,33 @@
 
                 & > ul li {
                     color: darken($primary-color, 40);
-                    font-size: 2rem;
-                    padding: 1rem;
+                    font-size: 1.5rem;
+                    padding: 1.3rem;
+                    position: relative;
 
                     & > a{
                         color: inherit;
                         transition-duration: 0.5s;
-                        
-                        &:hover{
-                            color: darken($primary-color, 30);
-                            background: lighten($primary-color, 10);
-                            padding: 1rem;
+                    }
+
+                    .sub-menu{
+                        position: absolute;
+                        left: 190px;
+                        top: 0;
+                        z-index: 2;
+                        display: none;
+                    }
+                    &:hover{
+                        color: darken($primary-color, 30);
+                        background: lighten($primary-color, 10);
+
+                        .sub-menu{
+                            display: flex;
+                            flex-direction: column;
+
+                            &:last-child{
+                                border: unset;
+                            }
                         }
                     }
                 }
