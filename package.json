@@ -1,0 +1,22 @@
+{
+  "name": "front-projetoenfermagem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoFCoelho/Faculdade-Front-ProjetoEnfermagem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoFCoelho/Faculdade-Front-ProjetoEnfermagem/issues"
+  },
+  "homepage": "https://github.com/GustavoFCoelho/Faculdade-Front-ProjetoEnfermagem#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
