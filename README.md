@@ -3,23 +3,26 @@
 ---------------------------------------------------------------------------------------------------
 --                                         Full Page Menu                                        --
 ---------------------------------------------------------------------------------------------------
+ /*
  <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburguer">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Paciente</a></li>
-                        <li><a href="#">Agenda</a></li>
-                        <li><a href="#">Medicamentos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+     <input type="checkbox" class="toggler">
+     <div class="hamburguer">
+         <div></div>
+     </div>
+     <div class="menu">
+         <div>
+             <div>
+                 <ul>
+                     <li><a href="#">Paciente</a></li>
+                     <li><a href="#">Agenda</a></li>
+                     <li><a href="#">Medicamentos</a></li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+    
+    */
 
 ---------------------------------------------------------------------------------------------------
 --                                         Markup Example                                        --
