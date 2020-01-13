@@ -1,0 +1,3 @@
+@function percent-max-width($percentage){
+    @return $max-width * ($percentage/100);
+}

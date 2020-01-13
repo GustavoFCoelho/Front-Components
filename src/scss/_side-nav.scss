@@ -1,0 +1,51 @@
+@import "toggleMenu";
+
+.side-menu-wrap{
+    position: relative;
+
+    .menu{
+        position: absolute;
+        width: percent-max-width(20);
+        background: $primary-color;
+        height: 100vh;
+        visibility: hidden;
+        display: flex;
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+        .menu-item{
+            padding: 1rem;
+            font-size: 1.5rem;
+
+            & a{
+                color: darken($primary-color, 50);
+            }
+
+            &:hover{
+                background: lighten($primary-color, 20);
+            }
+        }
+    }
+
+    .toggler{
+        &:checked{
+            & ~ .menu{
+                visibility: visible;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px), (max-height:600px){
+    .side-menu-wrap{
+        .menu{
+            width: percent-max-width(15);
+            
+            .menu-item{
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
