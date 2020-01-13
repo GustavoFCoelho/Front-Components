@@ -64,4 +64,27 @@
             }
         }
     }
+    .field-down{
+        position: absolute;
+        border: none;
+        border-bottom: solid 1px #777;
+        background: none;
+        z-index: 1;
+
+        &:focus,
+        &:valid{
+            & ~ .text-upper{
+                font-size: 12px;
+                transform: translateY(160%);
+            }
+        }
+
+        &:focus{
+            & .form-group{
+                .text-upper{
+                    color: aqua;
+                }
+            }
+        }
+    }
 }
