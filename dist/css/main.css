@@ -383,13 +383,27 @@
     position: absolute;
     border: none;
     border-bottom: solid 1px #777;
-    background: none; }
+    background: none;
+    z-index: 1; }
     .form-input-upper .field-upper:focus ~ .text-upper, .form-input-upper .field-upper:valid ~ .text-upper {
       font-size: 12px;
       transform: translateY(-150%); }
+    .form-input-upper .field-upper:focus .form-group .text-upper {
+      color: aqua; }
   .form-input-upper .text-upper {
     position: absolute;
     transition: 0.5s; }
+  .form-input-upper .field-left {
+    position: absolute;
+    border: none;
+    border-bottom: solid 1px #777;
+    background: none;
+    z-index: 1; }
+    .form-input-upper .field-left:focus ~ .text-upper, .form-input-upper .field-left:valid ~ .text-upper {
+      font-size: 12px;
+      transform: translateX(-150%); }
+    .form-input-upper .field-left:focus .form-group .text-upper {
+      color: aqua; }
 
 * {
   margin: 0;
