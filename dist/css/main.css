@@ -343,11 +343,11 @@
     flex-direction: column;
     justify-content: center;
     align-content: center; }
+    .side-menu-wrap .menu a {
+      color: #103b58; }
     .side-menu-wrap .menu .menu-item {
       padding: 1rem;
       font-size: 1.5rem; }
-      .side-menu-wrap .menu .menu-item a {
-        color: #103b58; }
       .side-menu-wrap .menu .menu-item:hover {
         background: #d5eaf8; }
   .side-menu-wrap .toggler:checked ~ .menu {

@@ -15,14 +15,14 @@
         justify-content: center;
         align-content: center;
         
+        a{
+            color: darken($primary-color, 50);
+        }
+
         .menu-item{
             padding: 1rem;
             font-size: 1.5rem;
-
-            & a{
-                color: darken($primary-color, 50);
-            }
-
+            
             &:hover{
                 background: lighten($primary-color, 20);
             }

@@ -130,7 +130,7 @@
 --                                         Side Menu Example                                     --
 ---------------------------------------------------------------------------------------------------
 ```
-<div class="side-menu-wrap">
+ <div class="side-menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburguer">
             <div></div>
@@ -139,13 +139,13 @@
             <div>
                 <div>
                     <ul>
-                        <li class="menu-item"><a href="#">Paciente</a></li>
-                        <li class="menu-item"><a href="#">Agenda</a></li>
-                        <li class="menu-item"><a href="#">Medicamentos</a></li>
-                        <li class="menu-item"><a href="#">Financeiro</a></li>
-                        <li class="menu-item"><a href="#">Financeiro</a></li>
-                        <li class="menu-item"><a href="#">Financeiro</a></li>
-                        <li class="menu-item"><a href="#">Financeiro</a></li>
+                        <a href="#"><li class="menu-item">Paciente</li></a>
+                        <a href="#"><li class="menu-item">Agenda</li></a>
+                        <a href="#"><li class="menu-item">Medicamentos</li></a>
+                        <a href="#"><li class="menu-item">Financeiro</li></a>
+                        <a href="#"><li class="menu-item">Financeiro</li></a>
+                        <a href="#"><li class="menu-item">Financeiro</li></a>
+                        <a href="#"><li class="menu-item">Financeiro</li></a>
                     </ul>
                 </div>
             </div>
