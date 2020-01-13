@@ -1,0 +1,34 @@
+.form-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & > input{
+        padding: 0.2rem;
+        outline: none;
+    }
+}
+
+.form-input-upper{
+    position: absolute;
+
+    .field-upper{
+        position: absolute;
+        border: none;
+        border-bottom: solid 1px #777;
+        background: none;
+
+        &:focus,
+        &:valid{
+            & ~ .text-upper{
+                font-size: 12px;
+                transform: translateY(-150%);
+            }
+        }
+    }
+    
+    .text-upper{
+        position: absolute;
+        transition: 0.5s;
+    }
+}

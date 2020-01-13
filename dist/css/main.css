@@ -213,6 +213,16 @@
   width: 80%;
   margin: auto; }
 
+.flex-container {
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
 .text-center {
   text-align: center; }
 
@@ -358,6 +368,28 @@
     width: 174px; }
     .side-menu-wrap .menu .menu-item {
       font-size: 0.75rem; } }
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .form-group > input {
+    padding: 0.2rem;
+    outline: none; }
+
+.form-input-upper {
+  position: absolute; }
+  .form-input-upper .field-upper {
+    position: absolute;
+    border: none;
+    border-bottom: solid 1px #777;
+    background: none; }
+    .form-input-upper .field-upper:focus ~ .text-upper, .form-input-upper .field-upper:valid ~ .text-upper {
+      font-size: 12px;
+      transform: translateY(-150%); }
+  .form-input-upper .text-upper {
+    position: absolute;
+    transition: 0.5s; }
 
 * {
   margin: 0;
