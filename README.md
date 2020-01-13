@@ -152,4 +152,15 @@
         </div>
     </div>
 ```
+---------------------------------------------------------------------------------------------------
+--                                         Input Field Example                                   --
+---------------------------------------------------------------------------------------------------
+```
+<div class="flex-container">
+    <div class="form-group form-input-upper">     
+        <input type="text" class="field-upper" value="" required>
+        <label class="text-upper">Nome</label>
+    </div>
+</div>
+```
 
