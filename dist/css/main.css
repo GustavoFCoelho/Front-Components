@@ -397,6 +397,12 @@ input {
   border: none;
   border-bottom: solid 1px #777;
   background: none; }
+  .field-upper-bordered {
+    border: solid #888 1px;
+    border-radius: 5px; }
+    .field-upper-bordered:focus ~ .text-input, .field-upper-bordered:valid ~ .text-input {
+      font-size: 12px;
+      transform: translateY(-160%); }
   .field-upper:focus ~ .text-input, .field-upper:valid ~ .text-input {
     font-size: 12px;
     transform: translateY(-150%); }
