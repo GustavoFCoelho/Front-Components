@@ -159,16 +159,30 @@
 <div class="container mt-5">
         <div class="form-row">
             <div class="form-group">
-                <input type="text" class="field-upper" value="" required>
+                <input type="text" class="field field-left" value="" required>
                 <label class="text-input">Nome</label>
             </div>
             <div class="form-group">
-                <input type="text" class="field-down" value="" required>
-                <label class="text-input">Nome</label>
-            </div>
+                    <input type="text" class="field field-left" value="" required>
+                    <label class="text-input">Sobrenome</label>
+                </div>
+        </div>
+        <div class="form-row">
             <div class="form-group">
-                <input type="text" class="field-left" value="" required>
-                <label class="text-input">Nome</label>
+                <input type="text" class="field field-left" value="" required>
+                <label class="text-input">Email</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <input type="text" class="field field-upper" value="" required>
+                <label class="text-input">Telefone</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <input type="password" class="field field-down" value="" required>
+                <label class="text-input">Passoword</label>
             </div>
         </div>
     </div>
