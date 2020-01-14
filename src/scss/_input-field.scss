@@ -1,71 +1,7 @@
 .form-group{
     position: relative;
-    margin: 0.2rem;
+    margin: 1rem;
     width: 100%;
-}
-
-input{
-    outline: none;
-    padding: 0.2rem;
-    width: 80%;
-}
-
-.field-upper{
-    border: none;
-    border-bottom: solid 1px #777;
-    background: none;
-
-    &-bordered{
-        border: solid #888 1px;
-        border-radius: 5px;
-
-        &:focus,
-        &:valid{
-        & ~ .text-input{
-            font-size: 12px;
-            transform: translateY(-160%);
-        }
-    }
-    }
-
-    &:focus,
-    &:valid{
-        & ~ .text-input{
-            font-size: 12px;
-            transform: translateY(-150%);
-        }
-    }
-}
-
-.field-left{
-    border: none;
-    border-bottom: solid 1px #777;
-    background: none;
-
-    &:focus,
-    &:valid{
-        & ~ .text-input{
-            font-size: 12px;
-            transform: translateX(-110%);
-
-            &::after{
-                content: ":";
-            }
-        }
-    }
-}
-.field-down{
-    border: none;
-    border-bottom: solid 1px #777;
-    background: none;
-
-    &:focus,
-    &:valid{
-        & ~ .text-input{
-            font-size: 12px;
-            transform: translateY(160%);
-        }
-    }
 }
 
 .text-input{
@@ -74,3 +10,79 @@ input{
     position: absolute;
     transition: 0.5s;
 }
+
+.field{
+    border: none;
+    border-bottom: solid 1px #777;
+    background: none;
+    outline: none;
+    padding: 0.2rem;
+    width: 80%;
+
+    &-upper{
+        &:focus{
+            border-bottom-color: $primary-color;
+
+            & ~ .text-input{
+                font-size: 12px;
+                transform: translateY(-150%);
+            }
+        }
+
+        &:valid{
+            & ~ .text-input{
+                font-size: 12px;
+                transform: translateY(-150%);
+            }
+        }
+    }
+        
+    &-left{
+        &:focus{
+            border-bottom-color: $primary-color;
+
+            & ~ .text-input{
+                font-size: 12px;
+                transform: translateX(-110%);
+
+                &::after{
+                    content: ":";
+                }
+            }
+        }
+
+        &:valid{
+            & ~ .text-input{
+                font-size: 12px;
+                transform: translateX(-110%);
+
+                &::after{
+                    content: ":";
+                }
+            }
+        }
+    }
+
+    &-down{
+        border: none;
+        border-bottom: solid 1px #777;
+        background: none;
+    
+        &:focus{
+            border-bottom-color: $primary-color;
+            
+            & ~ .text-input{
+                font-size: 12px;
+                transform: translateY(160%);
+            }
+        }
+
+        &:valid{
+            & ~ .text-input{
+                font-size: 12px;
+                transform: translateY(160%);
+            }
+        }
+    }
+}
+

@@ -387,51 +387,54 @@
 
 .form-group {
   position: relative;
-  margin: 0.2rem;
+  margin: 1rem;
   width: 100%; }
-
-input {
-  outline: none;
-  padding: 0.2rem;
-  width: 80%; }
-
-.field-upper {
-  border: none;
-  border-bottom: solid 1px #777;
-  background: none; }
-  .field-upper-bordered {
-    border: solid #888 1px;
-    border-radius: 5px; }
-    .field-upper-bordered:focus ~ .text-input, .field-upper-bordered:valid ~ .text-input {
-      font-size: 12px;
-      transform: translateY(-160%); }
-  .field-upper:focus ~ .text-input, .field-upper:valid ~ .text-input {
-    font-size: 12px;
-    transform: translateY(-150%); }
-
-.field-left {
-  border: none;
-  border-bottom: solid 1px #777;
-  background: none; }
-  .field-left:focus ~ .text-input, .field-left:valid ~ .text-input {
-    font-size: 12px;
-    transform: translateX(-110%); }
-    .field-left:focus ~ .text-input::after, .field-left:valid ~ .text-input::after {
-      content: ":"; }
-
-.field-down {
-  border: none;
-  border-bottom: solid 1px #777;
-  background: none; }
-  .field-down:focus ~ .text-input, .field-down:valid ~ .text-input {
-    font-size: 12px;
-    transform: translateY(160%); }
 
 .text-input {
   left: 0;
   bottom: 0;
   position: absolute;
   transition: 0.5s; }
+
+.field {
+  border: none;
+  border-bottom: solid 1px #777;
+  background: none;
+  outline: none;
+  padding: 0.2rem;
+  width: 80%; }
+  .field-upper:focus {
+    border-bottom-color: #7FBDE8; }
+    .field-upper:focus ~ .text-input {
+      font-size: 12px;
+      transform: translateY(-150%); }
+  .field-upper:valid ~ .text-input {
+    font-size: 12px;
+    transform: translateY(-150%); }
+  .field-left:focus {
+    border-bottom-color: #7FBDE8; }
+    .field-left:focus ~ .text-input {
+      font-size: 12px;
+      transform: translateX(-110%); }
+      .field-left:focus ~ .text-input::after {
+        content: ":"; }
+  .field-left:valid ~ .text-input {
+    font-size: 12px;
+    transform: translateX(-110%); }
+    .field-left:valid ~ .text-input::after {
+      content: ":"; }
+  .field-down {
+    border: none;
+    border-bottom: solid 1px #777;
+    background: none; }
+    .field-down:focus {
+      border-bottom-color: #7FBDE8; }
+      .field-down:focus ~ .text-input {
+        font-size: 12px;
+        transform: translateY(160%); }
+    .field-down:valid ~ .text-input {
+      font-size: 12px;
+      transform: translateY(160%); }
 
 * {
   margin: 0;
