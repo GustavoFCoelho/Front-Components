@@ -1,90 +1,63 @@
 .form-group{
     position: relative;
-    display: flex;
-    flex-direction: column;
+    margin: 0.2rem;
+    width: 100%;
+}
 
-    & > input{
-        padding: 0.2rem;
-        outline: none;
+input{
+    outline: none;
+    padding: 0.2rem;
+    width: 80%;
+}
+
+.field-upper{
+    border: none;
+    border-bottom: solid 1px #777;
+    background: none;
+
+    &:focus,
+    &:valid{
+        & ~ .text-input{
+            font-size: 12px;
+            transform: translateY(-150%);
+        }
     }
 }
 
-.form-input-upper{
+.field-left{
+    border: none;
+    border-bottom: solid 1px #777;
+    background: none;
+
+    &:focus,
+    &:valid{
+        & ~ .text-input{
+            font-size: 12px;
+            transform: translateX(-110%);
+
+            &::after{
+                content: ":";
+            }
+        }
+    }
+}
+.field-down{
+    border: none;
+    border-bottom: solid 1px #777;
+    background: none;
+
+    &:focus,
+    &:valid{
+        & ~ .text-input{
+            font-size: 12px;
+            transform: translateY(160%);
+        }
+    }
+}
+
+.text-input{
+    left: 0;
+    bottom: 0;
     position: absolute;
-
-    .field-upper{
-        position: absolute;
-        border: none;
-        border-bottom: solid 1px #777;
-        background: none;
-        z-index: 1;
-
-        &:focus,
-        &:valid{
-            & ~ .text-upper{
-                font-size: 12px;
-                transform: translateY(-150%);
-            }
-        }
-
-        &:focus{
-            & .form-group{
-                .text-upper{
-                    color: aqua;
-                }
-            }
-        }
-    }
-    
-    .text-upper{
-        position: absolute;
-        transition: 0.5s;
-    }
-
-    .field-left{
-        position: absolute;
-        border: none;
-        border-bottom: solid 1px #777;
-        background: none;
-        z-index: 1;
-
-        &:focus,
-        &:valid{
-            & ~ .text-upper{
-                font-size: 12px;
-                transform: translateX(-150%);
-            }
-        }
-
-        &:focus{
-            & .form-group{
-                .text-upper{
-                    color: aqua;
-                }
-            }
-        }
-    }
-    .field-down{
-        position: absolute;
-        border: none;
-        border-bottom: solid 1px #777;
-        background: none;
-        z-index: 1;
-
-        &:focus,
-        &:valid{
-            & ~ .text-upper{
-                font-size: 12px;
-                transform: translateY(160%);
-            }
-        }
-
-        &:focus{
-            & .form-group{
-                .text-upper{
-                    color: aqua;
-                }
-            }
-        }
-    }
+    transition: 0.5s;
 }

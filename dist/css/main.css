@@ -216,12 +216,10 @@
 .flex-container {
   width: 80%;
   margin: auto;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  overflow: hidden; }
+  align-items: center; }
 
 .text-center {
   text-align: center; }
@@ -257,6 +255,22 @@
 .lineup {
   border: #333 solid 1px;
   width: 100%; }
+
+.form-row {
+  display: flex;
+  flex-direction: row; }
+  .form-row .col-12 {
+    flex: 12; }
+  .form-row .col-6 {
+    flex: 6; }
+  .form-row .col-4 {
+    flex: 4; }
+  .form-row .col-3 {
+    flex: 3; }
+  .form-row .col-2 {
+    flex: 2; }
+  .form-row .col-1 {
+    flex: 1; }
 
 .small-card {
   margin: 1.5rem;
@@ -371,50 +385,45 @@
 
 .form-group {
   position: relative;
-  display: flex;
-  flex-direction: column; }
-  .form-group > input {
-    padding: 0.2rem;
-    outline: none; }
+  margin: 0.2rem;
+  width: 100%; }
 
-.form-input-upper {
-  position: absolute; }
-  .form-input-upper .field-upper {
-    position: absolute;
-    border: none;
-    border-bottom: solid 1px #777;
-    background: none;
-    z-index: 1; }
-    .form-input-upper .field-upper:focus ~ .text-upper, .form-input-upper .field-upper:valid ~ .text-upper {
-      font-size: 12px;
-      transform: translateY(-150%); }
-    .form-input-upper .field-upper:focus .form-group .text-upper {
-      color: aqua; }
-  .form-input-upper .text-upper {
-    position: absolute;
-    transition: 0.5s; }
-  .form-input-upper .field-left {
-    position: absolute;
-    border: none;
-    border-bottom: solid 1px #777;
-    background: none;
-    z-index: 1; }
-    .form-input-upper .field-left:focus ~ .text-upper, .form-input-upper .field-left:valid ~ .text-upper {
-      font-size: 12px;
-      transform: translateX(-150%); }
-    .form-input-upper .field-left:focus .form-group .text-upper {
-      color: aqua; }
-  .form-input-upper .field-down {
-    position: absolute;
-    border: none;
-    border-bottom: solid 1px #777;
-    background: none;
-    z-index: 1; }
-    .form-input-upper .field-down:focus ~ .text-upper, .form-input-upper .field-down:valid ~ .text-upper {
-      font-size: 12px;
-      transform: translateY(160%); }
-    .form-input-upper .field-down:focus .form-group .text-upper {
-      color: aqua; }
+input {
+  outline: none;
+  padding: 0.2rem;
+  width: 80%; }
+
+.field-upper {
+  border: none;
+  border-bottom: solid 1px #777;
+  background: none; }
+  .field-upper:focus ~ .text-input, .field-upper:valid ~ .text-input {
+    font-size: 12px;
+    transform: translateY(-150%); }
+
+.field-left {
+  border: none;
+  border-bottom: solid 1px #777;
+  background: none; }
+  .field-left:focus ~ .text-input, .field-left:valid ~ .text-input {
+    font-size: 12px;
+    transform: translateX(-110%); }
+    .field-left:focus ~ .text-input::after, .field-left:valid ~ .text-input::after {
+      content: ":"; }
+
+.field-down {
+  border: none;
+  border-bottom: solid 1px #777;
+  background: none; }
+  .field-down:focus ~ .text-input, .field-down:valid ~ .text-input {
+    font-size: 12px;
+    transform: translateY(160%); }
+
+.text-input {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.5s; }
 
 * {
   margin: 0;
