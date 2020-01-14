@@ -20,9 +20,7 @@
     & .items-markup{
         z-index: 1;
         display: none;
-        visibility: hidden;
-        transition-property: all;
-        transition-duration: 0.5s;                
+        visibility: hidden;              
 
         & > div {
             position: relative;
@@ -35,6 +33,8 @@
             border-radius: 50%;
             width: 50px;
             height: 50px;
+            transform: scale(0);
+            transition-duration: 0.5s;  
 
             & > label{
                 display: none;
@@ -70,6 +70,10 @@
             display: flex;
             flex-direction: row;
             visibility: visible;
+            
+            & > div{
+                transform: scale(1);
+            }
         }
     }
 }
