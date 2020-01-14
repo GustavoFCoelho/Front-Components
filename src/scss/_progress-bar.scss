@@ -1,0 +1,40 @@
+.progress-bar{
+    height: 15px;
+    background: $secondary-color;
+    width: 100%;
+    border-radius: 10px;
+
+    & > div{
+        position: relative;
+        background-color: $primary-color;
+        height: inherit;
+        border-radius: inherit;
+
+        & > label{
+            position: absolute;
+            right: -25px;
+            top: 1.4rem;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            padding:0.2rem 0.5rem;
+            display: none;
+    
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 1.5rem;
+                right: 18px;
+                border-style: solid;
+                border-color:  transparent transparent #333 transparent;
+                border-width: 16px 8px 8px 8px;
+            }
+        }
+    }
+
+    &:hover{
+        & > div > label{
+            display: unset;
+        }
+    }
+}

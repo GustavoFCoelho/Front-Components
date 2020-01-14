@@ -436,6 +436,36 @@
       font-size: 12px;
       transform: translateY(160%); }
 
+.progress-bar {
+  height: 15px;
+  background: #67FF5C;
+  width: 100%;
+  border-radius: 10px; }
+  .progress-bar > div {
+    position: relative;
+    background-color: #7FBDE8;
+    height: inherit;
+    border-radius: inherit; }
+    .progress-bar > div > label {
+      position: absolute;
+      right: -25px;
+      top: 1.4rem;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      padding: 0.2rem 0.5rem;
+      display: none; }
+      .progress-bar > div > label::before {
+        content: '';
+        position: absolute;
+        bottom: 1.5rem;
+        right: 18px;
+        border-style: solid;
+        border-color: transparent transparent #333 transparent;
+        border-width: 16px 8px 8px 8px; }
+  .progress-bar:hover > div > label {
+    display: unset; }
+
 * {
   margin: 0;
   padding: 0;
